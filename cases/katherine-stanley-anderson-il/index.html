@@ -131,7 +131,7 @@ text-decoration:none;border-radius:12px;padding:16px;font-weight:800;font-size:2
 color:var(--text);text-decoration:none;border-radius:10px;padding:12px;font-weight:700;font-size:15px;cursor:pointer}
 .share a:hover,.share button:hover{border-color:var(--gold);color:var(--gold)}
 @media print{
-header.top,.installbar,.backlink,.case-title,.case-loc,.verified-page,.alert-strip,
+header.top,.band,.installbar,.backlink,.case-title,.case-loc,.verified-page,.alert-strip,
 .fact,.bigcall,.sec,.share,.timeline,footer{display:none!important}
 body{background:#fff;color:#000}
 .casewrap{max-width:100%;margin:0}
@@ -156,6 +156,19 @@ body{background:#fff;color:#000}
 .boardrows .call .tap{display:block;font-size:11px;letter-spacing:2px;color:#93c5fd;margin-top:2px}
 .boardrows .call.no-link{color:#9a9a9a;border-color:#333;background:none}
 .boardrows .empty{color:#8a8a8a;font-size:16px;padding:12px 0}
+
+/* Homepage opening: big brand header band (Concept A — user-approved 2026-10-07).
+   The logo is the approved original at min(380px,84vw): a DOWNSCALE from its
+   native 472px, so it stays crisp. Never upscale it, never alter the art. */
+.band{background:#000;border-bottom:3px solid var(--gold);text-align:center;padding:30px 14px 22px}
+.band img.logo{width:min(380px,84vw);height:auto;display:block;margin:0 auto}
+.band .sitename{color:var(--gold);font-weight:800;letter-spacing:3px;font-size:clamp(20px,4.4vw,32px);margin:16px 0 6px}
+.band p.tag{color:#c9cede;font-size:15.5px;max-width:660px;margin:0 auto}
+.bandnav{display:flex;justify-content:center;gap:2px;flex-wrap:wrap;margin-top:18px}
+.bandnav a{color:var(--text);text-decoration:none;font-size:14px;padding:8px 12px;border-radius:8px}
+.bandnav a.on,.bandnav a:hover{background:#1a1a1a;color:var(--gold)}
+.bandnav a.support{background:var(--gold);color:#111;font-weight:800;margin-left:6px}
+.bandnav a.support:hover{background:#ffc233;color:#111}
 </style>
 </head>
 <body>
@@ -172,12 +185,12 @@ body{background:#fff;color:#000}
 <div class="case-photo"><img src="../posters/katherine-stanley-il.jpg" alt="Missing person flyer for Katherine Stanley (Anderson)"></div>
 <h1 class="case-title">Katherine Stanley (Anderson), 38</h1>
 <div class="case-loc">Earlville, IL</div>
-<div class='verified-page'>&#10003; Verified active &mdash; last checked Oct 2, 2026</div>
-<div class='alert-strip'><b>This case is active.</b> If you have information, call the number above or <b>911</b> in an emergency. Do not post tips publicly.</div>
+<div class='verified-page'>&#10003; Verified &mdash; last checked Oct 7, 2026</div>
+<div class='alert-strip' style='border-color:var(--green);background:#06281c'><b style='color:var(--green)'>FOUND SAFE</b> — this person has been brought home. Please do not repost this alert.</div>
 <div class='fact'><b>Missing since:</b> 2026-09-28</div><div class='fact'><b>Last seen:</b> Last seen in Mokena, IL (Flock camera) on 2026-09-28 at 3:45 PM</div><div class='fact'><b>Investigating agency:</b> Earlville Police Department</div>
 <a class='bigcall' href='tel:+18155384200'>Earlville Police Department<br>815-538-4200<small>TAP TO CALL</small></a>
 
-<h2 class='sec'>CASE TIMELINE</h2><div class='timeline'><div class='tl-step'><div class='tl-date'>Oct 2, 2026</div><div class='tl-label'>Status check</div><div class='tl-note'>Illinois Missing Persons post (sourcing Earlville PD), read live via facebook-cli; poster behind FB login wall, user-sent photo used as-is. Photo shows natur...</div></div></div>
+<h2 class='sec'>CASE TIMELINE</h2><div class='timeline'><div class='tl-step'><div class='tl-date'>Oct 2, 2026</div><div class='tl-label'>Status check</div><div class='tl-note'>Illinois Missing Persons post (sourcing Earlville PD), read live via facebook-cli; poster behind FB login wall, user-sent photo used as-is. Photo shows natur...</div></div><div class='tl-step'><div class='tl-date'>Oct 7, 2026</div><div class='tl-label'>Verified active</div><div class='tl-note'>Case status re-confirmed with the issuing authority.</div></div></div>
 <h2 class="sec">SHARE THIS ALERT</h2>
 
 <div class="share">
