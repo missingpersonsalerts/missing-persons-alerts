@@ -158,10 +158,14 @@ body{background:#fff;color:#000}
 .boardrows .empty{color:#8a8a8a;font-size:16px;padding:12px 0}
 
 /* Homepage opening: big brand header band (Concept A — user-approved 2026-10-07).
-   The logo is the approved original at min(380px,84vw): a DOWNSCALE from its
-   native 472px, so it stays crisp. Never upscale it, never alter the art. */
+   The logo is the approved original, served byte-identical at its native
+   472px wide. Display width is capped at 236px = exactly half native, so it
+   renders at a true 2x on retina/high-DPI phones. The previous 380px cap
+   forced browsers on high-DPI phones to upscale the 472px source ~2x past
+   its pixels and it looked blurry (user report 2026-10-15). Never display
+   it wider than half native, never upscale the art, never alter the art. */
 .band{background:#000;border-bottom:3px solid var(--gold);text-align:center;padding:30px 14px 22px}
-.band img.logo{width:min(380px,84vw);height:auto;display:block;margin:0 auto}
+.band img.logo{width:min(236px,80vw);height:auto;display:block;margin:0 auto}
 .band .sitename{color:var(--gold);font-weight:800;letter-spacing:3px;font-size:clamp(20px,4.4vw,32px);margin:16px 0 6px}
 .band p.tag{color:#c9cede;font-size:15.5px;max-width:660px;margin:0 auto}
 .bandnav{display:flex;justify-content:center;gap:2px;flex-wrap:wrap;margin-top:18px}
