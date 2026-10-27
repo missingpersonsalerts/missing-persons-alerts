@@ -142,9 +142,17 @@ text-decoration:none;border-radius:12px;padding:16px;font-weight:800;font-size:2
 .share a,.share button{flex:1;min-width:120px;text-align:center;background:var(--card);border:1px solid var(--line);
 color:var(--text);text-decoration:none;border-radius:10px;padding:12px;font-weight:700;font-size:15px;cursor:pointer}
 .share a:hover,.share button:hover{border-color:var(--gold);color:var(--gold)}
+.sharekit{display:flex;gap:16px;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin:0 0 18px}
+.sharekit .qrbox{background:#fff;border-radius:10px;padding:10px;flex:0 0 auto;height:fit-content;text-align:center}
+.sharekit .qrbox img{width:150px;height:150px;display:block}
+.sharekit .qrcap{color:#111;font-size:12.5px;font-weight:800;letter-spacing:.5px;margin-top:8px;line-height:1.35}
+.sharekit .kitmain{flex:1;min-width:250px}
+.sharekit .kitlabel{font-size:13px;font-weight:800;letter-spacing:1px;color:var(--gold);margin-bottom:8px}
+.sharekit textarea{width:100%;box-sizing:border-box;background:#0d1117;color:#e8e8e8;border:1px solid var(--line);border-radius:10px;padding:12px;font-size:15px;font-family:inherit;line-height:1.45;resize:vertical}
+.sharekit .share{margin:12px 0 0}
 @media print{
 header.top,.band,.installbar,.backlink,.case-title,.case-loc,.verified-page,.alert-strip,
-.fact,.bigcall,.sec,.share,.timeline,footer{display:none!important}
+.fact,.bigcall,.sec,.share,.sharekit,.timeline,footer{display:none!important}
 body{background:#fff;color:#000}
 .casewrap{max-width:100%;margin:0}
 .case-photo{border:0;border-radius:0;background:#fff;overflow:visible}

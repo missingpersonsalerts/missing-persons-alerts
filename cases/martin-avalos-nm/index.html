@@ -142,9 +142,17 @@ text-decoration:none;border-radius:12px;padding:16px;font-weight:800;font-size:2
 .share a,.share button{flex:1;min-width:120px;text-align:center;background:var(--card);border:1px solid var(--line);
 color:var(--text);text-decoration:none;border-radius:10px;padding:12px;font-weight:700;font-size:15px;cursor:pointer}
 .share a:hover,.share button:hover{border-color:var(--gold);color:var(--gold)}
+.sharekit{display:flex;gap:16px;flex-wrap:wrap;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin:0 0 18px}
+.sharekit .qrbox{background:#fff;border-radius:10px;padding:10px;flex:0 0 auto;height:fit-content;text-align:center}
+.sharekit .qrbox img{width:150px;height:150px;display:block}
+.sharekit .qrcap{color:#111;font-size:12.5px;font-weight:800;letter-spacing:.5px;margin-top:8px;line-height:1.35}
+.sharekit .kitmain{flex:1;min-width:250px}
+.sharekit .kitlabel{font-size:13px;font-weight:800;letter-spacing:1px;color:var(--gold);margin-bottom:8px}
+.sharekit textarea{width:100%;box-sizing:border-box;background:#0d1117;color:#e8e8e8;border:1px solid var(--line);border-radius:10px;padding:12px;font-size:15px;font-family:inherit;line-height:1.45;resize:vertical}
+.sharekit .share{margin:12px 0 0}
 @media print{
 header.top,.band,.installbar,.backlink,.case-title,.case-loc,.verified-page,.alert-strip,
-.fact,.bigcall,.sec,.share,.timeline,footer{display:none!important}
+.fact,.bigcall,.sec,.share,.sharekit,.timeline,footer{display:none!important}
 body{background:#fff;color:#000}
 .casewrap{max-width:100%;margin:0}
 .case-photo{border:0;border-radius:0;background:#fff;overflow:visible}
@@ -209,16 +217,51 @@ body{background:#fff;color:#000}
 <a class='bigcall' href='tel:+15755260795'>Las Cruces Police Department<br>(575) 526-0795<small>TAP TO CALL</small></a>
 <div class='fact'><b>Official source:</b> <a href='https://facebook.com/100068770204534/posts/pfbid02q7jonHJueSMoBE5LsP9kougsTtEVoXQ2WmAgc1bhqnajDz8hRXwGsYghPEucHjTyl/' target='_blank' rel='noopener'>view the official record</a></div>
 <h2 class='sec'>CASE TIMELINE</h2><div class='timeline'><div class='tl-step'><div class='tl-date'>Oct 22, 2026</div><div class='tl-label'>Reported</div><div class='tl-note'>Alert received and entered into the network.</div></div></div>
-<h2 class="sec">SHARE THIS ALERT</h2>
+<h2 class="sec">SHARE THIS CASE</h2>
 
+<div class="sharekit">
+<div class="qrbox"><img src="../qr/martin-avalos-nm.png" width="150" height="150" alt="QR code — scan to open this case page">
+<div class="qrcap">SCAN TO OPEN<br>THIS CASE</div></div>
+<div class="kitmain">
+<div class="kitlabel">READY-TO-COPY SHARE TEXT</div>
+<textarea readonly rows="3" aria-label="Ready-to-copy share text">LOCATED: Martin Avalos, 76 — Las Cruces, NM. Full details: https://www.missingpersonsalerts.com/cases/martin-avalos-nm/</textarea>
 <div class="share">
 <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.missingpersonsalerts.com%2Fcases%2Fmartin-avalos-nm%2F" target="_blank" rel="noopener">Share on Facebook</a>
-<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.missingpersonsalerts.com%2Fcases%2Fmartin-avalos-nm%2F&text=MISSING%3A%20Martin%20Avalos%20%E2%80%94%20please%20share" target="_blank" rel="noopener">Share on X</a>
-<a href="sms:?body=MISSING%3A%20Martin%20Avalos%20%E2%80%94%20please%20share%20https%3A//www.missingpersonsalerts.com/cases/martin-avalos-nm/">Share by SMS</a>
-<a href="https://wa.me/?text=MISSING%3A%20Martin%20Avalos%20%E2%80%94%20please%20share%20https%3A%2F%2Fwww.missingpersonsalerts.com%2Fcases%2Fmartin-avalos-nm%2F" target="_blank" rel="noopener">Share on WhatsApp</a>
-<button type="button" onclick="navigator.clipboard.writeText('https://www.missingpersonsalerts.com/cases/martin-avalos-nm/');this.textContent='Link copied ✓'">Copy link</button>
+<a href="https://wa.me/?text=LOCATED%3A%20Martin%20Avalos%2C%2076%20%E2%80%94%20Las%20Cruces%2C%20NM.%20Full%20details%3A%20https%3A%2F%2Fwww.missingpersonsalerts.com%2Fcases%2Fmartin-avalos-nm%2F" target="_blank" rel="noopener">Share on WhatsApp</a>
+<a href="sms:?&body=LOCATED%3A%20Martin%20Avalos%2C%2076%20%E2%80%94%20Las%20Cruces%2C%20NM.%20Full%20details%3A%20https%3A%2F%2Fwww.missingpersonsalerts.com%2Fcases%2Fmartin-avalos-nm%2F">Share by SMS</a>
+<a href="mailto:?subject=LOCATED%3A%20Martin%20Avalos%2C%2076%20%E2%80%94%20Las%20Cruces%2C%20NM&body=LOCATED%3A%20Martin%20Avalos%2C%2076%20%E2%80%94%20Las%20Cruces%2C%20NM.%20Full%20details%3A%20https%3A%2F%2Fwww.missingpersonsalerts.com%2Fcases%2Fmartin-avalos-nm%2F">Share by Email</a>
+<a href="https://twitter.com/intent/tweet?text=LOCATED%3A%20Martin%20Avalos%2C%2076%20%E2%80%94%20Las%20Cruces%2C%20NM.%20Full%20details%3A%20https%3A%2F%2Fwww.missingpersonsalerts.com%2Fcases%2Fmartin-avalos-nm%2F" target="_blank" rel="noopener">Share on X</a>
+<button type="button" data-copy="LOCATED: Martin Avalos, 76 — Las Cruces, NM. Full details: https://www.missingpersonsalerts.com/cases/martin-avalos-nm/">Copy share text</button>
+<button type="button" data-copy="https://www.missingpersonsalerts.com/cases/martin-avalos-nm/">Copy link</button>
+<button type="button" data-nativeshare data-sharetext="LOCATED: Martin Avalos, 76 — Las Cruces, NM. Full details: https://www.missingpersonsalerts.com/cases/martin-avalos-nm/" data-shareurl="https://www.missingpersonsalerts.com/cases/martin-avalos-nm/">Share…</button>
 <button type="button" onclick="window.print()">Print poster</button>
 </div>
+</div>
+</div>
+<script>
+(function(){
+function flash(btn,msg){
+if(!btn.getAttribute("data-label")){btn.setAttribute("data-label",btn.textContent);}
+btn.textContent=msg;
+setTimeout(function(){btn.textContent=btn.getAttribute("data-label");},1800);
+}
+function copyText(t,btn){
+if(navigator.clipboard&&navigator.clipboard.writeText){
+navigator.clipboard.writeText(t).then(function(){flash(btn,"Copied ✓");},function(){window.prompt("Copy this:",t);});
+}else{window.prompt("Copy this:",t);}
+}
+document.querySelectorAll("[data-copy]").forEach(function(btn){
+btn.addEventListener("click",function(){copyText(btn.getAttribute("data-copy"),btn);});
+});
+document.querySelectorAll("[data-nativeshare]").forEach(function(btn){
+btn.addEventListener("click",function(){
+var url=btn.getAttribute("data-shareurl"),text=btn.getAttribute("data-sharetext");
+if(navigator.share){navigator.share({title:document.title,text:text,url:url}).catch(function(){});}
+else{copyText(text,btn);}
+});
+});
+})();
+</script>
 </div></main>
 <footer>
 <p><span class="emg">If you see one of these people, call the number on the flyer — or 911 in an emergency.</span></p>
