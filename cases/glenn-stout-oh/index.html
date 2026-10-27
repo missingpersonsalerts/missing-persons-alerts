@@ -128,6 +128,9 @@ footer .socials a:hover{color:var(--gold);text-decoration:underline}
 .backlink{display:inline-block;margin:6px 0 14px;color:var(--gold);text-decoration:none;font-weight:700}
 .case-photo{background:#000;border:1px solid var(--line);border-radius:12px;overflow:hidden}
 .case-photo img{width:100%;height:auto;display:block}
+.case-photo.nophoto{background:#0d1226;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;aspect-ratio:4/3}
+.case-photo.nophoto span{font-size:64px;font-weight:800;color:var(--gold);letter-spacing:2px}
+.case-photo.nophoto small{color:var(--muted);font-size:12px;letter-spacing:1px}
 .case-title{font-size:clamp(26px,6vw,40px);font-weight:800;margin:16px 0 4px}
 .case-loc{color:var(--muted);font-size:17px;margin-bottom:14px}
 .fact{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:10px 0;font-size:16px}
@@ -197,7 +200,7 @@ body{background:#fff;color:#000}
 <main><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Person", "name": "Glenn Stout", "url": "https://www.missingpersonsalerts.com/cases/glenn-stout-oh/", "description": "Verified missing person alert: Glenn Stout, 78, McArthur, OH."}, {"@type": "NewsArticle", "headline": "Glenn Stout, 78 \u2014 Missing Adult, McArthur, OH", "url": "https://www.missingpersonsalerts.com/cases/glenn-stout-oh/", "description": "Verified missing person alert for Glenn Stout, 78, McArthur, OH. If seen, contact the investigating agency.", "datePublished": "2026-10-17", "author": {"@type": "Organization", "name": "Missing Persons Alerts Nationwide"}, "publisher": {"@type": "Organization", "name": "Missing Persons Alerts Nationwide"}, "image": "https://www.missingpersonsalerts.com/posters/glenn-stout-oh.jpg", "sourceOrganization": {"@type": "Organization", "name": "Vinton County Sheriff's Office"}}]}</script>
 <div class="casewrap">
 <a class="backlink" href="../index.html">← All active cases</a>
-<div class="case-photo"><img src="../posters/glenn-stout-oh.jpg" alt="Missing person flyer for Glenn Stout"></div>
+<div class='case-photo'><img src='../posters/glenn-stout-oh.jpg' alt='Missing person flyer for Glenn Stout'></div>
 <h1 class="case-title">Glenn Stout, 78</h1>
 <div class="case-loc">McArthur, OH</div>
 <div class='verified-page'>&#10003; Verified active &mdash; last checked Oct 21, 2026</div>
