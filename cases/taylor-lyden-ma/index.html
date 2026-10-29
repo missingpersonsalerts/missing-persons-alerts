@@ -150,6 +150,14 @@ color:var(--text);text-decoration:none;border-radius:10px;padding:12px;font-weig
 .sharekit .kitlabel{font-size:13px;font-weight:800;letter-spacing:1px;color:var(--gold);margin-bottom:8px}
 .sharekit textarea{width:100%;box-sizing:border-box;background:#0d1117;color:#e8e8e8;border:1px solid var(--line);border-radius:10px;padding:12px;font-size:15px;font-family:inherit;line-height:1.45;resize:vertical}
 .sharekit .share{margin:12px 0 0}
+.sharekit{box-sizing:border-box;max-width:100%}
+.sharekit .qrbox img{max-width:100%;height:auto}
+@media (max-width:560px){
+.sharekit{flex-direction:column;padding:14px}
+.sharekit .qrbox{align-self:center}
+.sharekit .kitmain{min-width:0;width:100%}
+.sharekit .share a,.sharekit .share button{min-width:0;flex:1 1 42%}
+}
 @media print{
 header.top,.band,.installbar,.backlink,.case-title,.case-loc,.verified-page,.alert-strip,
 .fact,.bigcall,.sec,.share,.sharekit,.timeline,footer{display:none!important}
@@ -220,7 +228,7 @@ body{background:#fff;color:#000}
 <h2 class="sec">SHARE THIS CASE</h2>
 
 <div class="sharekit">
-<div class="qrbox"><img src="../qr/taylor-lyden-ma.png" width="150" height="150" alt="QR code — scan to open this case page">
+<div class="qrbox"><img src="/qr/taylor-lyden-ma.png" width="150" height="150" alt="QR code — scan to open this case page">
 <div class="qrcap">SCAN TO OPEN<br>THIS CASE</div></div>
 <div class="kitmain">
 <div class="kitlabel">READY-TO-COPY SHARE TEXT</div>

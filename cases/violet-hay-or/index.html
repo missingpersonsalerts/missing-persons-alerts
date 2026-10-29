@@ -150,6 +150,14 @@ color:var(--text);text-decoration:none;border-radius:10px;padding:12px;font-weig
 .sharekit .kitlabel{font-size:13px;font-weight:800;letter-spacing:1px;color:var(--gold);margin-bottom:8px}
 .sharekit textarea{width:100%;box-sizing:border-box;background:#0d1117;color:#e8e8e8;border:1px solid var(--line);border-radius:10px;padding:12px;font-size:15px;font-family:inherit;line-height:1.45;resize:vertical}
 .sharekit .share{margin:12px 0 0}
+.sharekit{box-sizing:border-box;max-width:100%}
+.sharekit .qrbox img{max-width:100%;height:auto}
+@media (max-width:560px){
+.sharekit{flex-direction:column;padding:14px}
+.sharekit .qrbox{align-self:center}
+.sharekit .kitmain{min-width:0;width:100%}
+.sharekit .share a,.sharekit .share button{min-width:0;flex:1 1 42%}
+}
 @media print{
 header.top,.band,.installbar,.backlink,.case-title,.case-loc,.verified-page,.alert-strip,
 .fact,.bigcall,.sec,.share,.sharekit,.timeline,footer{display:none!important}
@@ -211,29 +219,29 @@ body{background:#fff;color:#000}
 <div class='case-photo'><img src='../posters/violet-hay-or.jpg' alt='Missing person flyer for Violet Hay'></div>
 <h1 class="case-title">Violet Hay, 10</h1>
 <div class="case-loc">Canby, OR</div>
-<div class='verified-page'>&#10003; Verified active &mdash; last checked Oct 28, 2026</div>
-<div class='alert-strip'><b>This case is active.</b> If you have information, call the number above or <b>911</b> in an emergency. Do not post tips publicly.</div>
+<div class='verified-page'>&#10003; Verified &mdash; last checked Oct 28, 2026</div>
+<div class='alert-strip' style='border-color:#7aa2ff;background:#101c33'><b style='color:#7aa2ff'>LOCATED</b> — this person has been located. Please do not repost this alert.</div>
 <div class='fact'><b>Missing since:</b> 2026-10-28</div><div class='fact'><b>Last seen:</b> October 28, 2026, at approximately 1:39 AM — southeast Canby, OR.</div><div class='fact'><b>Investigating agency:</b> Canby Police Department</div>
 <a class='bigcall' href='tel:+18004420776'>Canby Police Department<br>1-800-442-0776<small>TAP TO CALL</small></a>
 <div class='fact'><b>Official source:</b> <a href='https://www.canbychronicle.com/canby-pd-investigating-reported-kidnapping-of-10-year-old/' target='_blank' rel='noopener'>view the official record</a></div>
-<h2 class='sec'>CASE TIMELINE</h2><div class='timeline'><div class='tl-step'><div class='tl-date'>Oct 28, 2026</div><div class='tl-label'>Reported</div><div class='tl-note'>Alert received and entered into the network.</div></div></div>
+<h2 class='sec'>CASE TIMELINE</h2><div class='timeline'><div class='tl-step done'><div class='tl-date'>Oct 28, 2026</div><div class='tl-label'>Located</div></div></div>
 <h2 class="sec">SHARE THIS CASE</h2>
 
 <div class="sharekit">
-<div class="qrbox"><img src="../qr/violet-hay-or.png" width="150" height="150" alt="QR code — scan to open this case page">
+<div class="qrbox"><img src="/qr/violet-hay-or.png" width="150" height="150" alt="QR code — scan to open this case page">
 <div class="qrcap">SCAN TO OPEN<br>THIS CASE</div></div>
 <div class="kitmain">
 <div class="kitlabel">READY-TO-COPY SHARE TEXT</div>
-<textarea readonly rows="3" aria-label="Ready-to-copy share text">MISSING: Violet Hay, 10 — Canby, OR. If seen, call Canby Police Department at 1-800-442-0776. Full details: https://www.missingpersonsalerts.com/cases/violet-hay-or/</textarea>
+<textarea readonly rows="3" aria-label="Ready-to-copy share text">LOCATED: Violet Hay, 10 — Canby, OR. Full details: https://www.missingpersonsalerts.com/cases/violet-hay-or/</textarea>
 <div class="share">
 <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.missingpersonsalerts.com%2Fcases%2Fviolet-hay-or%2F" target="_blank" rel="noopener">Share on Facebook</a>
-<a href="https://wa.me/?text=MISSING%3A%20Violet%20Hay%2C%2010%20%E2%80%94%20Canby%2C%20OR.%20If%20seen%2C%20call%20Canby%20Police%20Department%20at%201-800-442-0776.%20Full%20details%3A%20https%3A%2F%2Fwww.missingpersonsalerts.com%2Fcases%2Fviolet-hay-or%2F" target="_blank" rel="noopener">Share on WhatsApp</a>
-<a href="sms:?&body=MISSING%3A%20Violet%20Hay%2C%2010%20%E2%80%94%20Canby%2C%20OR.%20If%20seen%2C%20call%20Canby%20Police%20Department%20at%201-800-442-0776.%20Full%20details%3A%20https%3A%2F%2Fwww.missingpersonsalerts.com%2Fcases%2Fviolet-hay-or%2F">Share by SMS</a>
-<a href="mailto:?subject=MISSING%3A%20Violet%20Hay%2C%2010%20%E2%80%94%20Canby%2C%20OR&body=MISSING%3A%20Violet%20Hay%2C%2010%20%E2%80%94%20Canby%2C%20OR.%20If%20seen%2C%20call%20Canby%20Police%20Department%20at%201-800-442-0776.%20Full%20details%3A%20https%3A%2F%2Fwww.missingpersonsalerts.com%2Fcases%2Fviolet-hay-or%2F">Share by Email</a>
-<a href="https://twitter.com/intent/tweet?text=MISSING%3A%20Violet%20Hay%2C%2010%20%E2%80%94%20Canby%2C%20OR.%20If%20seen%2C%20call%20Canby%20Police%20Department%20at%201-800-442-0776.%20Full%20details%3A%20https%3A%2F%2Fwww.missingpersonsalerts.com%2Fcases%2Fviolet-hay-or%2F" target="_blank" rel="noopener">Share on X</a>
-<button type="button" data-copy="MISSING: Violet Hay, 10 — Canby, OR. If seen, call Canby Police Department at 1-800-442-0776. Full details: https://www.missingpersonsalerts.com/cases/violet-hay-or/">Copy share text</button>
+<a href="https://wa.me/?text=LOCATED%3A%20Violet%20Hay%2C%2010%20%E2%80%94%20Canby%2C%20OR.%20Full%20details%3A%20https%3A%2F%2Fwww.missingpersonsalerts.com%2Fcases%2Fviolet-hay-or%2F" target="_blank" rel="noopener">Share on WhatsApp</a>
+<a href="sms:?&body=LOCATED%3A%20Violet%20Hay%2C%2010%20%E2%80%94%20Canby%2C%20OR.%20Full%20details%3A%20https%3A%2F%2Fwww.missingpersonsalerts.com%2Fcases%2Fviolet-hay-or%2F">Share by SMS</a>
+<a href="mailto:?subject=LOCATED%3A%20Violet%20Hay%2C%2010%20%E2%80%94%20Canby%2C%20OR&body=LOCATED%3A%20Violet%20Hay%2C%2010%20%E2%80%94%20Canby%2C%20OR.%20Full%20details%3A%20https%3A%2F%2Fwww.missingpersonsalerts.com%2Fcases%2Fviolet-hay-or%2F">Share by Email</a>
+<a href="https://twitter.com/intent/tweet?text=LOCATED%3A%20Violet%20Hay%2C%2010%20%E2%80%94%20Canby%2C%20OR.%20Full%20details%3A%20https%3A%2F%2Fwww.missingpersonsalerts.com%2Fcases%2Fviolet-hay-or%2F" target="_blank" rel="noopener">Share on X</a>
+<button type="button" data-copy="LOCATED: Violet Hay, 10 — Canby, OR. Full details: https://www.missingpersonsalerts.com/cases/violet-hay-or/">Copy share text</button>
 <button type="button" data-copy="https://www.missingpersonsalerts.com/cases/violet-hay-or/">Copy link</button>
-<button type="button" data-nativeshare data-sharetext="MISSING: Violet Hay, 10 — Canby, OR. If seen, call Canby Police Department at 1-800-442-0776. Full details: https://www.missingpersonsalerts.com/cases/violet-hay-or/" data-shareurl="https://www.missingpersonsalerts.com/cases/violet-hay-or/">Share…</button>
+<button type="button" data-nativeshare data-sharetext="LOCATED: Violet Hay, 10 — Canby, OR. Full details: https://www.missingpersonsalerts.com/cases/violet-hay-or/" data-shareurl="https://www.missingpersonsalerts.com/cases/violet-hay-or/">Share…</button>
 <button type="button" onclick="window.print()">Print poster</button>
 </div>
 </div>

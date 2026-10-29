@@ -150,6 +150,14 @@ color:var(--text);text-decoration:none;border-radius:10px;padding:12px;font-weig
 .sharekit .kitlabel{font-size:13px;font-weight:800;letter-spacing:1px;color:var(--gold);margin-bottom:8px}
 .sharekit textarea{width:100%;box-sizing:border-box;background:#0d1117;color:#e8e8e8;border:1px solid var(--line);border-radius:10px;padding:12px;font-size:15px;font-family:inherit;line-height:1.45;resize:vertical}
 .sharekit .share{margin:12px 0 0}
+.sharekit{box-sizing:border-box;max-width:100%}
+.sharekit .qrbox img{max-width:100%;height:auto}
+@media (max-width:560px){
+.sharekit{flex-direction:column;padding:14px}
+.sharekit .qrbox{align-self:center}
+.sharekit .kitmain{min-width:0;width:100%}
+.sharekit .share a,.sharekit .share button{min-width:0;flex:1 1 42%}
+}
 @media print{
 header.top,.band,.installbar,.backlink,.case-title,.case-loc,.verified-page,.alert-strip,
 .fact,.bigcall,.sec,.share,.sharekit,.timeline,footer{display:none!important}
@@ -214,8 +222,9 @@ flyer directly. In an emergency, call <b>911</b>. Please do not send tips throug
 <h3>Request an alert for a missing loved one</h3>
 <p>We publish alerts only after verifying the case with an official source. The fastest way to request
 an alert is our <a href="submit.html"><b>case submission form</b></a> — it walks you through everything
-we need and gives you a formatted message to send us through the
-send us through our <a href="https://www.facebook.com/100068994946479" target="_blank" rel="noopener"><b>Facebook page</b></a> messenger with a clear photo.</p>
+we need and gives you a formatted message to send us through our
+<a href="https://m.me/100068994946479" target="_blank" rel="noopener"><b>Facebook Page Messenger</b></a> with a clear photo.</p>
+<p><a class="btn" href="https://m.me/100068994946479" target="_blank" rel="noopener">Message us on Messenger</a></p>
 <h3>Support the mission</h3>
 <p>This is a volunteer-run community alert network. Donations help cover the phone line, design tools,
 and printed flyers that keep alerts going. Visibility saves lives.</p>

@@ -150,6 +150,14 @@ color:var(--text);text-decoration:none;border-radius:10px;padding:12px;font-weig
 .sharekit .kitlabel{font-size:13px;font-weight:800;letter-spacing:1px;color:var(--gold);margin-bottom:8px}
 .sharekit textarea{width:100%;box-sizing:border-box;background:#0d1117;color:#e8e8e8;border:1px solid var(--line);border-radius:10px;padding:12px;font-size:15px;font-family:inherit;line-height:1.45;resize:vertical}
 .sharekit .share{margin:12px 0 0}
+.sharekit{box-sizing:border-box;max-width:100%}
+.sharekit .qrbox img{max-width:100%;height:auto}
+@media (max-width:560px){
+.sharekit{flex-direction:column;padding:14px}
+.sharekit .qrbox{align-self:center}
+.sharekit .kitmain{min-width:0;width:100%}
+.sharekit .share a,.sharekit .share button{min-width:0;flex:1 1 42%}
+}
 @media print{
 header.top,.band,.installbar,.backlink,.case-title,.case-loc,.verified-page,.alert-strip,
 .fact,.bigcall,.sec,.share,.sharekit,.timeline,footer{display:none!important}
@@ -260,12 +268,12 @@ message to copy — paste it into the page's Messenger along with a clear photo 
 <h3>Your submission is ready</h3>
 <ol class="steps">
 <li>Tap <b>Copy message</b> below.</li>
-<li><a href="https://www.facebook.com/100068994946479" target="_blank" rel="noopener"><b>Open our Facebook page</b></a> and tap <b>Message</b>.</li>
+<li><a href="https://m.me/100068994946479" target="_blank" rel="noopener"><b>Open Messenger</b></a> to chat with our Facebook Page.</li>
 <li>Paste the message, <b>attach a clear photo</b> of the missing person, and send.</li>
 </ol>
 <textarea id="outtext" rows="18" readonly></textarea>
 <div class="btnrow"><button class="btn" type="button" id="copybtn">Copy message</button>
-<a class="btn ghost" href="https://www.facebook.com/100068994946479" target="_blank" rel="noopener">Open Facebook page</a></div>
+<a class="btn ghost" href="https://m.me/100068994946479" target="_blank" rel="noopener">Message us on Messenger</a></div>
 <p class="count-note">We review every submission and verify it with the investigating agency before publishing.
 In an emergency, always call 911 first.</p>
 </div>
