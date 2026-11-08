@@ -190,12 +190,14 @@ body{background:#fff;color:#000}
 .boardrows .empty{color:#8a8a8a;font-size:16px;padding:12px 0}
 
 /* Homepage opening: big brand header band (Concept A — user-approved 2026-10-07).
-   The logo is the approved original, served byte-identical at its native
-   472px wide. Display width was capped at 236px (half native) on 2026-10-15,
-   which is a true 2x on retina screens but still soft on 3x-density phones
-   (user report 2026-10-24). Her decision 2026-10-24: display it A BIT
-   SMALLER AND RAZOR SHARP everywhere — width capped at 157px = one third
-   native, a true 3x on every phone. Never upscale the art, never alter
+   The logo is the approved artwork. Display width was capped at 236px on
+   2026-10-15 (a true 2x on retina but still soft on 3x-density phones, user
+   report 2026-10-24). Her decision 2026-10-24: display it A BIT SMALLER AND
+   RAZOR SHARP everywhere — width capped at 157px. The source then was the
+   472px-wide original (one third native at 157px = a true 3x). Since
+   2026-11-08 the source is network-logo-hires.png, the same approved art
+   cropped from the 1080px master at 946px wide (~6x at display size), after
+   she reported the header still fuzzy. Never upscale the art, never alter
    the art. */
 .band{background:#000;border-bottom:3px solid var(--gold);text-align:center;padding:30px 14px 22px}
 .band img.logo{width:min(157px,60vw);height:auto;display:block;margin:0 auto}
